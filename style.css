@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: '微軟正黑體', Helvetica;
+}
+
+#banner {
+    width: 100%;
+    /* vh 螢幕高度 */
+    height: 100vh;
+    background-image: url(./img/banner.jpg);
+    background-size: cover;
+    color: white;
+}
