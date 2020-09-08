@@ -6,7 +6,6 @@
 }
 body {
     background-color: #F5D7E3;
-    height: 4000px;
 }
 
 /* 橫幅 */
@@ -24,9 +23,11 @@ body {
     padding: 30px;
 }
 
-#banner img {
-    width: 50px;
-    height: 50px;
+#banner  img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 50px;
 }
 
 #banner a {
@@ -148,9 +149,11 @@ a.button:hover {
 }
 
 #content h2 {
-    margin: 50px 0 25px 0;
+    margin: 50px 0 30px 0;
     text-align: center;
     color: #48639C;
+    letter-spacing: 10px;
+    font-size: 36px;
 }
 
 #content div {
@@ -160,7 +163,23 @@ a.button:hover {
 }
 
 #content a {
-    height: 500px;
+    height: 350px;
+    text-decoration: none;
+    /* 垂直置中 */
+    line-height: 350px;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+}
+
+#content a span {
+    display: block;
+    backdrop-filter: blur(2px) opacity(60%);
+    transition: 0.5s;
+}
+
+#content a span:hover {
+    backdrop-filter: blur(2px) opacity(20%);
 }
 
 #content #about {
@@ -171,4 +190,40 @@ a.button:hover {
 #content #contact {
     background-image: url(./img/contact.jpg);
     background-position: center;
+}
+
+#map {
+    display: block;
+    width: 1200px;
+    margin: 200px auto 0;
+    height: 350px;
+}
+
+footer {
+    padding: 50px 0 20px;
+    background-color: #48639C;
+    margin-top: 50px;
+    text-align: center;
+}
+
+footer h2 {
+    color: white;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+footer p {
+    color: white;
+    margin-top: 10px;
+}
+
+#icon a {
+    padding: 0 10px 0;
+    filter: opacity(100%);
+    transition: 0.5s;
+}
+
+#icon a:hover {
+    filter: opacity(30%)
 }
